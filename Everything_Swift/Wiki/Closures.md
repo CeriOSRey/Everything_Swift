@@ -33,3 +33,21 @@ func someFuncWithEscapingClosure(completionHanlder: @escaping () -> Void) {
 }
 ```
 - **add [weak self] before the parameters to ensure weak reference to self, if self is referenced inside the closure.**
+
+# Autoclosures
+- An autoclosure is a closure that’s automatically created to wrap an expression that’s being passed as an argument to a function. It doesn’t take any arguments, and when it’s called, it returns the value of the expression that’s wrapped inside of it.
+
+```
+var customersInLine = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
+print(customersInLine.count)
+// Prints "5"
+
+let customerProvider = { customersInLine.remove(at: 0) }
+print(customersInLine.count)
+// Prints "5"
+
+print("Now serving \(customerProvider())!")
+// Prints "Now serving Chris!"
+print(customersInLine.count)
+// Prints "4"
+```
