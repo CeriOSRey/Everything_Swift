@@ -21,7 +21,7 @@
     - value is copied when it's assigned to a variable or constant or when its passed to a function.
     - integers, floats, bools, strings, arrays and dictionaries are Structs
     - **copy on write means a second object will not be created on assignment, It will be created when we do something to/with it.**
-    - **Memory allocation of a struct inside a class will be in a heap because it a part of the class
+    - **Memory allocation of a struct inside a class will be in a heap because it a part of the class**
     - STACK 
         - LIFO
         - thread safe - each thread has its own stack
