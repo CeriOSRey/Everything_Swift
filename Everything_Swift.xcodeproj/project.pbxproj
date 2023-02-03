@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E0071770298AE45A0098DD53 /* Extensions.md in Resources */ = {isa = PBXBuildFile; fileRef = E007176F298AE45A0098DD53 /* Extensions.md */; };
+		E0071774298C202C0098DD53 /* DoTryCatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0071773298C202C0098DD53 /* DoTryCatch.swift */; };
+		E0071777298C2BC80098DD53 /* DownLoadImageAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0071776298C2BC80098DD53 /* DownLoadImageAsync.swift */; };
+		E0071779298C3D780098DD53 /* AsyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0071778298C3D780098DD53 /* AsyncAwait.swift */; };
 		E0DC2D1A298989FB002CC185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC2D19298989FB002CC185 /* AppDelegate.swift */; };
 		E0DC2D1C298989FB002CC185 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC2D1B298989FB002CC185 /* SceneDelegate.swift */; };
 		E0DC2D1E298989FB002CC185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC2D1D298989FB002CC185 /* ViewController.swift */; };
@@ -20,6 +23,10 @@
 
 /* Begin PBXFileReference section */
 		E007176F298AE45A0098DD53 /* Extensions.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Extensions.md; sourceTree = "<group>"; };
+		E0071773298C202C0098DD53 /* DoTryCatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTryCatch.swift; sourceTree = "<group>"; };
+		E0071775298C24B20098DD53 /* Shortcuts.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Shortcuts.md; sourceTree = "<group>"; };
+		E0071776298C2BC80098DD53 /* DownLoadImageAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownLoadImageAsync.swift; sourceTree = "<group>"; };
+		E0071778298C3D780098DD53 /* AsyncAwait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwait.swift; sourceTree = "<group>"; };
 		E0DC2D16298989FB002CC185 /* Everything_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Everything_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DC2D19298989FB002CC185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0DC2D1B298989FB002CC185 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +51,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0071771298C1FC30098DD53 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				E0071772298C1FD40098DD53 /* Concurrency */,
+			);
+			path = Practice;
+			sourceTree = "<group>";
+		};
+		E0071772298C1FD40098DD53 /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				E0071773298C202C0098DD53 /* DoTryCatch.swift */,
+				E0071776298C2BC80098DD53 /* DownLoadImageAsync.swift */,
+				E0071778298C3D780098DD53 /* AsyncAwait.swift */,
+			);
+			path = Concurrency;
+			sourceTree = "<group>";
+		};
 		E0DC2D0D298989FB002CC185 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +88,7 @@
 		E0DC2D18298989FB002CC185 /* Everything_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				E0071771298C1FC30098DD53 /* Practice */,
 				E0DC2D2D29898A0F002CC185 /* Wiki */,
 				E0DC2D19298989FB002CC185 /* AppDelegate.swift */,
 				E0DC2D1B298989FB002CC185 /* SceneDelegate.swift */,
@@ -82,6 +108,7 @@
 				E0DC2D322989A009002CC185 /* Enumeration.md */,
 				E0DC2D342989A865002CC185 /* Closures.md */,
 				E007176F298AE45A0098DD53 /* Extensions.md */,
+				E0071775298C24B20098DD53 /* Shortcuts.md */,
 			);
 			path = Wiki;
 			sourceTree = "<group>";
@@ -160,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0071774298C202C0098DD53 /* DoTryCatch.swift in Sources */,
 				E0DC2D1E298989FB002CC185 /* ViewController.swift in Sources */,
 				E0DC2D1A298989FB002CC185 /* AppDelegate.swift in Sources */,
+				E0071779298C3D780098DD53 /* AsyncAwait.swift in Sources */,
 				E0DC2D1C298989FB002CC185 /* SceneDelegate.swift in Sources */,
+				E0071777298C2BC80098DD53 /* DownLoadImageAsync.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
