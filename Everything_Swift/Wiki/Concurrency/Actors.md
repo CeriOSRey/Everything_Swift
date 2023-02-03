@@ -14,3 +14,4 @@
         func updateUI() {
             //update UI here...
         }```
+    - We can also use **MainActor.run(body:{})**
