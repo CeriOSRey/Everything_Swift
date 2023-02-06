@@ -38,13 +38,21 @@ class AsyncAwaitVM: ObservableObject {
         let author2 = "Author2: \(Thread.current)"
         
         // Jump back to mainthread with this MainActor.run({})
-        
         await MainActor.run(body: { [weak self] in
             self?.dataArray.append((author2))
             let author3 = "Author3: \(Thread.current)"
             self?.dataArray.append(author3)
         })
-        
+    }
+    
+    func addSomething() async {
+        try? await Task.sleep(nanoseconds: 2_000_000_000)
+        let something1 = "Something1 : \(Thread.current)"
+        await MainActor.run(body: {
+            self.dataArray.append(something1)
+            let something2 = "Something2: \(Thread.current)"
+            self.dataArray.append(something2)
+        })
     }
     
 }
@@ -62,6 +70,9 @@ struct AsyncAwait: View {
         .onAppear {
             Task {
                 await vm.addAuthor1()
+                await vm.addSomething()
+                let finalText = "Final Text: \(Thread.current)"
+                vm.dataArray.append(finalText)
             }
 //            vm.addTitle1()
 //            vm.addTitle2()
