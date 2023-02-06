@@ -57,7 +57,9 @@
 		E00717D42990DEA90098DD53 /* BackgroundMaterials.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00717D32990DEA90098DD53 /* BackgroundMaterials.swift */; };
 		E00717D62990E05E0098DD53 /* SelectingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00717D52990E05E0098DD53 /* SelectingText.swift */; };
 		E00717D82990E0EF0098DD53 /* ButtonStylesControlSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00717D72990E0EF0098DD53 /* ButtonStylesControlSize.swift */; };
-		E00717DA2990E7760098DD53 /* SwipeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00717D92990E7760098DD53 /* SwipeActions.swift */; };
+		E00717DA2990E7760098DD53 /* SwipeActionsOnListItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00717D92990E7760098DD53 /* SwipeActionsOnListItems.swift */; };
+		E00717DC299197D60098DD53 /* Badges.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00717DB299197D60098DD53 /* Badges.swift */; };
+		E00717DE29919A790098DD53 /* FocusStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00717DD29919A790098DD53 /* FocusStates.swift */; };
 		E0DC2D1A298989FB002CC185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC2D19298989FB002CC185 /* AppDelegate.swift */; };
 		E0DC2D1C298989FB002CC185 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC2D1B298989FB002CC185 /* SceneDelegate.swift */; };
 		E0DC2D1E298989FB002CC185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC2D1D298989FB002CC185 /* ViewController.swift */; };
@@ -120,7 +122,9 @@
 		E00717D32990DEA90098DD53 /* BackgroundMaterials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMaterials.swift; sourceTree = "<group>"; };
 		E00717D52990E05E0098DD53 /* SelectingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectingText.swift; sourceTree = "<group>"; };
 		E00717D72990E0EF0098DD53 /* ButtonStylesControlSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStylesControlSize.swift; sourceTree = "<group>"; };
-		E00717D92990E7760098DD53 /* SwipeActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActions.swift; sourceTree = "<group>"; };
+		E00717D92990E7760098DD53 /* SwipeActionsOnListItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionsOnListItems.swift; sourceTree = "<group>"; };
+		E00717DB299197D60098DD53 /* Badges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badges.swift; sourceTree = "<group>"; };
+		E00717DD29919A790098DD53 /* FocusStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusStates.swift; sourceTree = "<group>"; };
 		E0DC2D16298989FB002CC185 /* Everything_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Everything_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DC2D19298989FB002CC185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0DC2D1B298989FB002CC185 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -213,7 +217,9 @@
 				E00717D32990DEA90098DD53 /* BackgroundMaterials.swift */,
 				E00717D52990E05E0098DD53 /* SelectingText.swift */,
 				E00717D72990E0EF0098DD53 /* ButtonStylesControlSize.swift */,
-				E00717D92990E7760098DD53 /* SwipeActions.swift */,
+				E00717D92990E7760098DD53 /* SwipeActionsOnListItems.swift */,
+				E00717DB299197D60098DD53 /* Badges.swift */,
+				E00717DD29919A790098DD53 /* FocusStates.swift */,
 			);
 			path = Beginner;
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 				E00717CC2990BAFF0098DD53 /* DarkMode.swift in Sources */,
 				E00717D42990DEA90098DD53 /* BackgroundMaterials.swift in Sources */,
 				E00717C42990738A0098DD53 /* Pickers.swift in Sources */,
+				E00717DC299197D60098DD53 /* Badges.swift in Sources */,
 				E007179E298F53E10098DD53 /* StatePropertyWrapper.swift in Sources */,
 				E0071792298EFC870098DD53 /* Spacerdemo.swift in Sources */,
 				E00717B0298F76970098DD53 /* SheetsAndFullScreenCover.swift in Sources */,
@@ -362,6 +369,7 @@
 				E0071798298F118B0098DD53 /* LazyVGriddemo.swift in Sources */,
 				E00717CE2990D6290098DD53 /* OnAppearOnDisappear.swift in Sources */,
 				E00717A6298F60220098DD53 /* ConditionalStatements.swift in Sources */,
+				E00717DE29919A790098DD53 /* FocusStates.swift in Sources */,
 				E0071794298F07930098DD53 /* InitsAndEnumdemo.swift in Sources */,
 				E0071786298EDFEF0098DD53 /* SystemIconsdemo.swift in Sources */,
 				E007178E298EF2F60098DD53 /* VHZStacksdemo.swift in Sources */,
@@ -383,7 +391,7 @@
 				E00717B2298F7A970098DD53 /* SheetVSTransitionVSAnimation.swift in Sources */,
 				E0071796298F0C6D0098DD53 /* ScrollViewdemo.swift in Sources */,
 				E00717BE29903E1F0098DD53 /* TextFields.swift in Sources */,
-				E00717DA2990E7760098DD53 /* SwipeActions.swift in Sources */,
+				E00717DA2990E7760098DD53 /* SwipeActionsOnListItems.swift in Sources */,
 				E00717AC298F6A450098DD53 /* AnimationTiming.swift in Sources */,
 				E00717B8299021580098DD53 /* Alerts.swift in Sources */,
 				E00717D62990E05E0098DD53 /* SelectingText.swift in Sources */,
