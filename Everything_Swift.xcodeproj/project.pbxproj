@@ -61,6 +61,7 @@
 		E00717DC299197D60098DD53 /* Badges.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00717DB299197D60098DD53 /* Badges.swift */; };
 		E00717DE29919A790098DD53 /* FocusStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00717DD29919A790098DD53 /* FocusStates.swift */; };
 		E00718CF2992F59B0098DD53 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00718CE2992F59B0098DD53 /* UnitTests.swift */; };
+		E00718D12992FB6D0098DD53 /* JSONDecoderdemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00718D02992FB6D0098DD53 /* JSONDecoderdemo.swift */; };
 		E0DC2D1A298989FB002CC185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC2D19298989FB002CC185 /* AppDelegate.swift */; };
 		E0DC2D1C298989FB002CC185 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC2D1B298989FB002CC185 /* SceneDelegate.swift */; };
 		E0DC2D1E298989FB002CC185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC2D1D298989FB002CC185 /* ViewController.swift */; };
@@ -127,6 +128,7 @@
 		E00717DB299197D60098DD53 /* Badges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badges.swift; sourceTree = "<group>"; };
 		E00717DD29919A790098DD53 /* FocusStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusStates.swift; sourceTree = "<group>"; };
 		E00718CE2992F59B0098DD53 /* UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
+		E00718D02992FB6D0098DD53 /* JSONDecoderdemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderdemo.swift; sourceTree = "<group>"; };
 		E0DC2D16298989FB002CC185 /* Everything_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Everything_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DC2D19298989FB002CC185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0DC2D1B298989FB002CC185 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				E00717DB299197D60098DD53 /* Badges.swift */,
 				E00717DD29919A790098DD53 /* FocusStates.swift */,
 				E00718CE2992F59B0098DD53 /* UnitTests.swift */,
+				E00718D02992FB6D0098DD53 /* JSONDecoderdemo.swift */,
 			);
 			path = Beginner;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				E007178A298EE4CC0098DD53 /* Framedemo.swift in Sources */,
 				E0DC2D1E298989FB002CC185 /* ViewController.swift in Sources */,
 				E0071788298EE21B0098DD53 /* Imagesdemo.swift in Sources */,
+				E00718D12992FB6D0098DD53 /* JSONDecoderdemo.swift in Sources */,
 				E00717C22990712C0098DD53 /* Toggles.swift in Sources */,
 				E00717A4298F5C930098DD53 /* BindingPropertyWrapper.swift in Sources */,
 				E00717A2298F59EE0098DD53 /* ExtractingSubViews.swift in Sources */,
