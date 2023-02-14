@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CA05A5C299C3BAD00729FE7 /* GeometryReaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA05A5B299C3BAD00729FE7 /* GeometryReaders.swift */; };
 		E0071770298AE45A0098DD53 /* Extensions.md in Resources */ = {isa = PBXBuildFile; fileRef = E007176F298AE45A0098DD53 /* Extensions.md */; };
 		E0071774298C202C0098DD53 /* DoTryCatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0071773298C202C0098DD53 /* DoTryCatch.swift */; };
 		E0071777298C2BC80098DD53 /* DownLoadImageAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0071776298C2BC80098DD53 /* DownLoadImageAsync.swift */; };
@@ -73,6 +74,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5CA05A5B299C3BAD00729FE7 /* GeometryReaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaders.swift; sourceTree = "<group>"; };
 		E007176F298AE45A0098DD53 /* Extensions.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Extensions.md; sourceTree = "<group>"; };
 		E0071773298C202C0098DD53 /* DoTryCatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTryCatch.swift; sourceTree = "<group>"; };
 		E0071775298C24B20098DD53 /* Shortcuts.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Shortcuts.md; sourceTree = "<group>"; };
@@ -153,9 +155,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CA05A5A299C3B8C00729FE7 /* Intermediate */ = {
+			isa = PBXGroup;
+			children = (
+				5CA05A5B299C3BAD00729FE7 /* GeometryReaders.swift */,
+			);
+			path = Intermediate;
+			sourceTree = "<group>";
+		};
 		E0071771298C1FC30098DD53 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				5CA05A5A299C3B8C00729FE7 /* Intermediate */,
 				E007177A298ECABA0098DD53 /* Beginner */,
 				E0071772298C1FD40098DD53 /* Concurrency */,
 			);
@@ -392,6 +403,7 @@
 				E0071780298ED0160098DD53 /* Shapesdemo.swift in Sources */,
 				E0DC2D1C298989FB002CC185 /* SceneDelegate.swift in Sources */,
 				E00717C6299097C00098DD53 /* Steppers.swift in Sources */,
+				5CA05A5C299C3BAD00729FE7 /* GeometryReaders.swift in Sources */,
 				E007177E298ECB780098DD53 /* Textdemo.swift in Sources */,
 				E0071777298C2BC80098DD53 /* DownLoadImageAsync.swift in Sources */,
 				E00717AE298F6CE60098DD53 /* AnimationTransition.swift in Sources */,
