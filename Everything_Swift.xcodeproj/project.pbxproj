@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C8DFA41299F43BA00455385 /* Continuations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DFA40299F43BA00455385 /* Continuations.swift */; };
+		5C8DFA43299FEAE700455385 /* Actors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DFA42299FEAE700455385 /* Actors.swift */; };
+		5C8DFA4529A00BBE00455385 /* GlobalActors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DFA4429A00BBE00455385 /* GlobalActors.swift */; };
+		5C8DFA4729A0153400455385 /* Sendables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DFA4629A0153400455385 /* Sendables.swift */; };
+		5C8DFA4929A0322200455385 /* AsyncPublishers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DFA4829A0322200455385 /* AsyncPublishers.swift */; };
+		5C8DFA4C29A03EEA00455385 /* CustomViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DFA4B29A03EEA00455385 /* CustomViewModifier.swift */; };
+		5C8DFA4E29A0517F00455385 /* CustomButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DFA4D29A0517F00455385 /* CustomButtonStyles.swift */; };
+		5C8DFA5029A058B100455385 /* CustomAnyTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DFA4F29A058B100455385 /* CustomAnyTransitions.swift */; };
 		5CA05A5C299C3BAD00729FE7 /* GeometryReaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA05A5B299C3BAD00729FE7 /* GeometryReaders.swift */; };
+		5CA05A69299EAD2100729FE7 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA05A68299EAD2100729FE7 /* Tasks.swift */; };
+		5CA05A6B299EEE1700729FE7 /* AsyncLet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA05A6A299EEE1700729FE7 /* AsyncLet.swift */; };
+		5CA05A6D299F1CF300729FE7 /* TaskGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA05A6C299F1CF300729FE7 /* TaskGroups.swift */; };
 		E0071770298AE45A0098DD53 /* Extensions.md in Resources */ = {isa = PBXBuildFile; fileRef = E007176F298AE45A0098DD53 /* Extensions.md */; };
 		E0071774298C202C0098DD53 /* DoTryCatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0071773298C202C0098DD53 /* DoTryCatch.swift */; };
 		E0071777298C2BC80098DD53 /* DownLoadImageAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0071776298C2BC80098DD53 /* DownLoadImageAsync.swift */; };
@@ -74,7 +85,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C8DFA40299F43BA00455385 /* Continuations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continuations.swift; sourceTree = "<group>"; };
+		5C8DFA42299FEAE700455385 /* Actors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actors.swift; sourceTree = "<group>"; };
+		5C8DFA4429A00BBE00455385 /* GlobalActors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalActors.swift; sourceTree = "<group>"; };
+		5C8DFA4629A0153400455385 /* Sendables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sendables.swift; sourceTree = "<group>"; };
+		5C8DFA4829A0322200455385 /* AsyncPublishers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncPublishers.swift; sourceTree = "<group>"; };
+		5C8DFA4B29A03EEA00455385 /* CustomViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModifier.swift; sourceTree = "<group>"; };
+		5C8DFA4D29A0517F00455385 /* CustomButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyles.swift; sourceTree = "<group>"; };
+		5C8DFA4F29A058B100455385 /* CustomAnyTransitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnyTransitions.swift; sourceTree = "<group>"; };
 		5CA05A5B299C3BAD00729FE7 /* GeometryReaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaders.swift; sourceTree = "<group>"; };
+		5CA05A68299EAD2100729FE7 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		5CA05A6A299EEE1700729FE7 /* AsyncLet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLet.swift; sourceTree = "<group>"; };
+		5CA05A6C299F1CF300729FE7 /* TaskGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroups.swift; sourceTree = "<group>"; };
 		E007176F298AE45A0098DD53 /* Extensions.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Extensions.md; sourceTree = "<group>"; };
 		E0071773298C202C0098DD53 /* DoTryCatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTryCatch.swift; sourceTree = "<group>"; };
 		E0071775298C24B20098DD53 /* Shortcuts.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Shortcuts.md; sourceTree = "<group>"; };
@@ -155,6 +177,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C8DFA4A29A03D9400455385 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				5C8DFA4B29A03EEA00455385 /* CustomViewModifier.swift */,
+				5C8DFA4D29A0517F00455385 /* CustomButtonStyles.swift */,
+				5C8DFA4F29A058B100455385 /* CustomAnyTransitions.swift */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
 		5CA05A5A299C3B8C00729FE7 /* Intermediate */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +198,7 @@
 		E0071771298C1FC30098DD53 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				5C8DFA4A29A03D9400455385 /* Master */,
 				5CA05A5A299C3B8C00729FE7 /* Intermediate */,
 				E007177A298ECABA0098DD53 /* Beginner */,
 				E0071772298C1FD40098DD53 /* Concurrency */,
@@ -179,6 +212,14 @@
 				E0071773298C202C0098DD53 /* DoTryCatch.swift */,
 				E0071776298C2BC80098DD53 /* DownLoadImageAsync.swift */,
 				E0071778298C3D780098DD53 /* AsyncAwait.swift */,
+				5CA05A68299EAD2100729FE7 /* Tasks.swift */,
+				5CA05A6A299EEE1700729FE7 /* AsyncLet.swift */,
+				5CA05A6C299F1CF300729FE7 /* TaskGroups.swift */,
+				5C8DFA40299F43BA00455385 /* Continuations.swift */,
+				5C8DFA42299FEAE700455385 /* Actors.swift */,
+				5C8DFA4429A00BBE00455385 /* GlobalActors.swift */,
+				5C8DFA4629A0153400455385 /* Sendables.swift */,
+				5C8DFA4829A0322200455385 /* AsyncPublishers.swift */,
 			);
 			path = Concurrency;
 			sourceTree = "<group>";
@@ -374,6 +415,7 @@
 				E007179A298F3C5D0098DD53 /* SafeAreademo.swift in Sources */,
 				E00717CC2990BAFF0098DD53 /* DarkMode.swift in Sources */,
 				E00717D42990DEA90098DD53 /* BackgroundMaterials.swift in Sources */,
+				5CA05A69299EAD2100729FE7 /* Tasks.swift in Sources */,
 				E00717C42990738A0098DD53 /* Pickers.swift in Sources */,
 				E00717DC299197D60098DD53 /* Badges.swift in Sources */,
 				E007179E298F53E10098DD53 /* StatePropertyWrapper.swift in Sources */,
@@ -382,7 +424,11 @@
 				E0071782298ED2A40098DD53 /* Colordemo.swift in Sources */,
 				E00717BA29902BBE0098DD53 /* ActionSheets.swift in Sources */,
 				E0DC2D1A298989FB002CC185 /* AppDelegate.swift in Sources */,
+				5C8DFA4729A0153400455385 /* Sendables.swift in Sources */,
+				5CA05A6D299F1CF300729FE7 /* TaskGroups.swift in Sources */,
 				E00717BC29903A830098DD53 /* ContextMenus.swift in Sources */,
+				5C8DFA4C29A03EEA00455385 /* CustomViewModifier.swift in Sources */,
+				5C8DFA4929A0322200455385 /* AsyncPublishers.swift in Sources */,
 				E00717AA298F65420098DD53 /* AnimationsDemo.swift in Sources */,
 				E0071798298F118B0098DD53 /* LazyVGriddemo.swift in Sources */,
 				E00717CE2990D6290098DD53 /* OnAppearOnDisappear.swift in Sources */,
@@ -390,17 +436,21 @@
 				E00717DE29919A790098DD53 /* FocusStates.swift in Sources */,
 				E0071794298F07930098DD53 /* InitsAndEnumdemo.swift in Sources */,
 				E00718CF2992F59B0098DD53 /* UnitTests.swift in Sources */,
+				5C8DFA43299FEAE700455385 /* Actors.swift in Sources */,
 				E0071786298EDFEF0098DD53 /* SystemIconsdemo.swift in Sources */,
 				E007178E298EF2F60098DD53 /* VHZStacksdemo.swift in Sources */,
 				E007179C298F418C0098DD53 /* Buttonsdemo.swift in Sources */,
 				E0071790298EF6D80098DD53 /* Paddingdemo.swift in Sources */,
+				5CA05A6B299EEE1700729FE7 /* AsyncLet.swift in Sources */,
 				E00717CA2990A6390098DD53 /* TabViews.swift in Sources */,
 				E00717B6298F98A10098DD53 /* LIsts.swift in Sources */,
 				E0071784298ED7ED0098DD53 /* Gradientdemo.swift in Sources */,
+				5C8DFA4529A00BBE00455385 /* GlobalActors.swift in Sources */,
 				E00717B4298F86550098DD53 /* NavigationViewAndLink.swift in Sources */,
 				E0071779298C3D780098DD53 /* AsyncAwait.swift in Sources */,
 				E00717C0299044DC0098DD53 /* TextEditors.swift in Sources */,
 				E0071780298ED0160098DD53 /* Shapesdemo.swift in Sources */,
+				5C8DFA5029A058B100455385 /* CustomAnyTransitions.swift in Sources */,
 				E0DC2D1C298989FB002CC185 /* SceneDelegate.swift in Sources */,
 				E00717C6299097C00098DD53 /* Steppers.swift in Sources */,
 				5CA05A5C299C3BAD00729FE7 /* GeometryReaders.swift in Sources */,
@@ -409,6 +459,7 @@
 				E00717AE298F6CE60098DD53 /* AnimationTransition.swift in Sources */,
 				E00717A0298F56A00098DD53 /* ExtractingFunctionsAndViews.swift in Sources */,
 				E00717B2298F7A970098DD53 /* SheetVSTransitionVSAnimation.swift in Sources */,
+				5C8DFA4E29A0517F00455385 /* CustomButtonStyles.swift in Sources */,
 				E0071796298F0C6D0098DD53 /* ScrollViewdemo.swift in Sources */,
 				E00717BE29903E1F0098DD53 /* TextFields.swift in Sources */,
 				E00717DA2990E7760098DD53 /* SwipeActionsOnListItems.swift in Sources */,
@@ -416,6 +467,7 @@
 				E00717B8299021580098DD53 /* Alerts.swift in Sources */,
 				E00717D62990E05E0098DD53 /* SelectingText.swift in Sources */,
 				E00717D02990D7C40098DD53 /* OnTapGesture.swift in Sources */,
+				5C8DFA41299F43BA00455385 /* Continuations.swift in Sources */,
 				E007178C298EE81B0098DD53 /* BackgroundAndOverlaydemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

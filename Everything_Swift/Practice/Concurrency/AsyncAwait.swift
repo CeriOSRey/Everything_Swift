@@ -5,6 +5,18 @@
 //  Created by Rey Cerio on 2023-02-02.
 //
 
+
+///**Things to know about async/await:**
+/*
+ If you add an async keyword to your function, it can be called on a background thread even if you start the function from the Main Thread.
+ If you run a code from Task, you can’t make any assumptions about the thread. It could be dispatched on any thread (unless it is started from the Main Actor).
+ If you call await within an asynchronous function, it creates a suspension point that may switch execution to any pending code, even to the same function if it was called multiple times.
+ If your asynchronous function resumes after await, the thread is not guaranteed to be the same as before await (unless you use @MainActor). Therefore, you should not make any assumptions about that.
+ Because of internal thread management, when using Swift Concurrency, you should not mix it with classic synchronization methods like locks, semaphores, etc. It may result in an unexpected behavior because some of those features have implementations that rely on threads.
+ If you add @MainActor attribute to a function, it is not the same as wrapping the whole method in DispatchQueue.main.async. If your method contains await keyword, the code will be split into two pieces – one before await and one after await, and as mentioned before, once the method hits await another pending call can start running even before the first one is finished. Therefore, you should not assume that the method will be fully processed before it is called again even when using @MainActor.
+
+ */
+
 import SwiftUI
 
 class AsyncAwaitVM: ObservableObject {
