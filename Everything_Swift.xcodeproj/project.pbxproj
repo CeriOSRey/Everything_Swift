@@ -85,6 +85,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C12BB452C1E6A000051161F /* IQ_Accessibility_Data.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = IQ_Accessibility_Data.md; sourceTree = "<group>"; };
+		5C12BB462C1E94100051161F /* IQ_DesignPattern_iOSFramework.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = IQ_DesignPattern_iOSFramework.md; sourceTree = "<group>"; };
+		5C12BB472C1EC1CA0051161F /* IQ_ Performance_Security.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "IQ_ Performance_Security.md"; sourceTree = "<group>"; };
+		5C12BB482C1F64E90051161F /* IQ_Swift.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = IQ_Swift.md; sourceTree = "<group>"; };
 		5C8DFA40299F43BA00455385 /* Continuations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continuations.swift; sourceTree = "<group>"; };
 		5C8DFA42299FEAE700455385 /* Actors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actors.swift; sourceTree = "<group>"; };
 		5C8DFA4429A00BBE00455385 /* GlobalActors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalActors.swift; sourceTree = "<group>"; };
@@ -322,6 +326,10 @@
 				E0DC2D342989A865002CC185 /* Closures.md */,
 				E007176F298AE45A0098DD53 /* Extensions.md */,
 				E0071775298C24B20098DD53 /* Shortcuts.md */,
+				5C12BB452C1E6A000051161F /* IQ_Accessibility_Data.md */,
+				5C12BB462C1E94100051161F /* IQ_DesignPattern_iOSFramework.md */,
+				5C12BB472C1EC1CA0051161F /* IQ_ Performance_Security.md */,
+				5C12BB482C1F64E90051161F /* IQ_Swift.md */,
 			);
 			path = Wiki;
 			sourceTree = "<group>";
