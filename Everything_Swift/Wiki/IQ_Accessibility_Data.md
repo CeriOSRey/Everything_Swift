@@ -42,7 +42,7 @@ Example: `Button("Delete", action: deleteItem).accessibilityAction(.delete)`
 - Accessing elements in an `array` are done with index while keys for `dictionaries` and actual values for `Set`.
 
 ## 6. What are the main differences between `classes` and `structs` in Swift?
-- Making another instance of a struct creates a copy while creating another instance of a class creates a reference. Changes to a class also changes all the copies.
+- Making another instance of a struct creates a copy while creating another instance of a class creates a reference. Changes to a class also changes the original.
 - `Classes` are prefered when you want to take advantage of reference semantics and `Obj-C` interoperability. `Structs` are prefered for simpler data structure and also for their immutability when declared as let (properties cant be changed unlike classes), thread safety and copy on write behaviour.
 - Memory Location: Value types store data directly where they are defined (stack for local variables, or inline for structs). Reference types store a reference (pointer) to data stored elsewhere (heap).
 - Copy vs. Reference: Assigning or passing a value type creates a new independent copy of the data. Assigning or passing a reference type creates a new reference to the same shared data.
@@ -128,6 +128,7 @@ struct StringFetcher: Fetcher {
 struct AnyFetcher<T>: Fetcher {
     private let _fetchData: () -> T
     
+    // Here we dont see the StringFetcher being called but we are using it's method
     init<F: Fetcher>(_ fetcher: F) where F.DataType == T {
         _fetchData = { fetcher.fetchData() }
     }

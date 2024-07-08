@@ -49,6 +49,7 @@ Maintainability: Improves code maintainability by decoupling components and redu
 ## 7. Can you explain KVO, and how it's used on Apple's platforms?
 - allows you to observe changes to specific properties without tightly coupling components.
 - key looks like this `\.objectToObserve.myDate`
+- can only be done to reference types
 
 ## 8. Can you give some examples of where singletons might be a good idea?
 - Configuration Managers: A singleton can manage app-wide configuration settings. For example, a SettingsManager that handles user preferences or theme settings.
@@ -59,11 +60,22 @@ Maintainability: Improves code maintainability by decoupling components and redu
 
 ## 9. What are phantom types and when would you use them?
 - allow you to add extra information to your types without actually affecting their implementation.
+```
+// Role is the phantom type
+struct Employee<Role>: Equatable {
+    var name: String
+}
+
+let zoe1 = Employee<Programmer>(name: "Zoe")
+let zoe2 = Employee<ScrumMaster>(name: "Zoe")
+
+print(zoe1 == zoe2) // this does not compile because the Phantom Type "Role" does not match.
+```
 
 # iOS Framework
 
 ## 1. How do you create your UI layouts – storyboards or in code?
-- With storyboards there is a risk of merge conflicts, to resolve, use isolate your work in its own storyboard.
+- With storyboards there is a risk of merge conflicts, to resolve, isolate your work in its own storyboard.
 - with Code, you dont have a visual representation of your work. 
 
 ## 2. How would you add a shadow to one of your views?
@@ -85,7 +97,9 @@ Text("Hacking with Swift")
 ```
 
 ## 3. How would you round the corners of one of your views?
-- UIKit: `view.layer.cornerRadius = 10`
+- UIKit: `view.layer.cornerRadius = 10` 
+        `view.layer.translateAutoresizingMaskIntoConstraints = true` 
+        `//necessary to make sure nothing goes outside of the mask which is the cornerRadius`
 - SwiftUI:
 ```
 Text("Round Me")
@@ -150,7 +164,7 @@ Text("Round Me")
 - Platform- and Device-Specific Keys: You can add platform- or device-specific keys using syntax like [key name]-[platform]~[device] (e.g., UISupportedInterfaceOrientations~ipad for iPad orientation settings)
 
 ## 7. What is the purpose of size classes?
--  Size Classes categorize devices based on their screen sizes. Instead of designing layouts for each individual device, you design for a set of predefined Size Classes. This makes your interface adaptable to a wide range of devices with similar characteristics1. Essentially, Size Classes help create adaptive user interfaces that work seamlessly across different screen sizes and orientations2.
+-  Size Classes categorize devices based on their screen sizes. Instead of designing layouts for each individual device, you design for a set of predefined Size Classes. This makes your interface adaptable to a wide range of devices with similar characteristics. Essentially, Size Classes help create adaptive user interfaces that work seamlessly across different screen sizes and orientations.
 
 ## 8. What happens when Color or UIColor has values outside 0 to 1?
 - If you set a color component value below 0.0 or above 1.0, it will be automatically clamped to the valid range.

@@ -89,6 +89,7 @@
 		5C12BB462C1E94100051161F /* IQ_DesignPattern_iOSFramework.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = IQ_DesignPattern_iOSFramework.md; sourceTree = "<group>"; };
 		5C12BB472C1EC1CA0051161F /* IQ_ Performance_Security.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "IQ_ Performance_Security.md"; sourceTree = "<group>"; };
 		5C12BB482C1F64E90051161F /* IQ_Swift.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = IQ_Swift.md; sourceTree = "<group>"; };
+		5C12BBBC2C3ADB3D0051161F /* IQ_UIKit.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = IQ_UIKit.md; sourceTree = "<group>"; };
 		5C8DFA40299F43BA00455385 /* Continuations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continuations.swift; sourceTree = "<group>"; };
 		5C8DFA42299FEAE700455385 /* Actors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actors.swift; sourceTree = "<group>"; };
 		5C8DFA4429A00BBE00455385 /* GlobalActors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalActors.swift; sourceTree = "<group>"; };
@@ -330,6 +331,7 @@
 				5C12BB462C1E94100051161F /* IQ_DesignPattern_iOSFramework.md */,
 				5C12BB472C1EC1CA0051161F /* IQ_ Performance_Security.md */,
 				5C12BB482C1F64E90051161F /* IQ_Swift.md */,
+				5C12BBBC2C3ADB3D0051161F /* IQ_UIKit.md */,
 			);
 			path = Wiki;
 			sourceTree = "<group>";

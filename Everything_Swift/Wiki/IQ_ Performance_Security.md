@@ -9,7 +9,7 @@
 - If your app needs to connect to older servers that don’t support TLS, you can add ATS exceptions selectively. However, limit exceptions to specific domains or frameworks.
 - Always prefer HTTPS over HTTP for server communication.
 
-## 3. How would you explain App Transport Security to a new iOS developer?
+## 3. What experience do you have of using the keychain?
 - The keychain is like a secure vault for your app. It’s where you store small pieces of sensitive user data, such as passwords or tokens.
 - Storing sensitive data without encryption is risky. The keychain ensures that your data remains encrypted.
 - First-Time Setup: When your app needs credentials (like a password), it prompts the user to provide them. After successful authentication, your app stores these credentials in the keychain.
@@ -23,7 +23,7 @@
 # Performance
 
 ## 1. How would you identify and resolve a retain cycle?
-- Use tools like Instruments Profiler or Xcode’s Memory Graph Debugger to detect potential cycles
+- Use tools like Instruments Profiler or Xcode’s Memory Graph Debugger to detect potential retain cycles
 - Use weak or unowned.
 - weak is optional while unowned needs the property to outlast the parent will need to be initialized within the parent.
 
@@ -58,7 +58,7 @@
     Write to a log to track program flow and identify issues.
 - Download Crash Logs (iOS):
     Retrieve crash logs from iTunes Connect for detailed information.
-    Analyze stack traces and identify problematic areas2.
+    Analyze stack traces and identify problematic areas.
     
 ## 5. How does Swift handle memory management?
 - Automatic Reference Counting (ARC)

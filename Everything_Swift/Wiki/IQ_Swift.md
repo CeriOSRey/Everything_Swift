@@ -29,7 +29,7 @@ print("Result:", result) // Output: Result: 16.0
 ## 5. What are property observers?
 - they are closures declared after the property to observe changes to the property.
 ```
-var temperature: Double = 0 {
+var temperature: Double = {
     willSet {
         print("Temperature will change to \(newValue)°C")
     }
@@ -85,7 +85,7 @@ func sum(of numbers: [Int]) -> Int {
 
 - Purpose:
 It checks if a given module (e.g., UIKit, Foundation, etc.) can be imported for the current platform.
-Useful for writing platform-specific code without causing errors on platforms where certain modules are unavailable1.
+Useful for writing platform-specific code without causing errors on platforms where certain modules are unavailable.
 - Example:
 Suppose you want to use UIKit on iOS and AppKit on macOS:
 Swift
@@ -162,7 +162,7 @@ let unwrappedName = name ?? "Anonymous"
     Use with caution; if it’s nil, your app will crash.
     Typically used for properties that are set during initialization and guaranteed to have a value afterward.
 ## 18. When would you use the guard keyword in Swift?
-- When you want to unwrap an optional and you want to exit the block/scope if the value is nil.
+- When you want to unwrap an optional and you want to exit the block/scope if the condition is not met.
 
 ## 19. Apart from the built-in ones, can you give an example of property wrappers?
 - Property wrappers in Swift allow you to extract common logic into distinct wrapper objects, reducing boilerplate code. While there are built-in property wrappers like @State, @Binding, and @ObservedObject, you can also create custom ones or use third-party libraries. 
@@ -280,7 +280,7 @@ do {
     }
     ```
 
-## 25. 
+## 25. What is the #available attribute in swift?
 - The #available syntax in Swift is a powerful feature for checking the availability of APIs, features, or platform versions at compile-time. Here’s how it works:
 
 - Conditional Compilation:
@@ -365,7 +365,6 @@ func processFile() {
     }
     // Perform file-related operations...
 }
-
 ```
 
 ## 31. How would you explain key paths to a new Swift developer?
@@ -474,7 +473,7 @@ func example(_ performAction: () -> Void) {
     performAction()
 }
 ```
-AI-generated code. Review and use carefully. More info on FAQ.
+
 Calling this function with a closure that prints out a string requires curly braces:
 
 `example({ print("Hello, world!") })`
@@ -486,3 +485,55 @@ func example(_ performAction: @autoclosure () -> Void) {
 }
 example(print("Hello, world"))
 ```
+
+## 37. What are associated types in swift?
+- Associated types are a powerful way of making protocols generic
+```
+protocol ItemStoring {
+    associatedtype DataType
+
+    var items: [DataType] { get set}
+    mutating func add(item: DataType)
+}
+```
+
+- Usage:
+```
+struct NameDatabase: ItemStoring {
+    var items = [String]()
+}
+
+var names = NameDatabase()
+names.add(item: "James")
+names.add(item: "Jess")
+```
+
+## 38. Higher order functions in collections?
+- Sorted
+    ```
+    let descendingNumbers = numbers.sorted { (a, b) → Bool in
+        return a > b
+    }
+    // or
+    let descendingNumbers = numbers.sorted (by: >)
+    ```
+- Map
+```
+let numbersAsStrings = numbers.map { String($0) }
+```
+
+- Filter
+```
+let numberLessThanFive = numbers.filter { $0 < 5 }
+```
+- Reduce
+```
+let sumOfAllNumbers = numbers.reduce ("") € $0 + String ($1) }
+```
+
+## 39. Access Control
+- Swift provides us with several options, but when you’re learning you’ll only need a handful:
+
+- Use private for “don’t let anything outside the struct use this.”
+- Use fileprivate for “don’t let anything outside the current file use this.”
+- Use public for “let anyone, anywhere use this.”

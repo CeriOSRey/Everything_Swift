@@ -24,7 +24,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 ## 5. What are the pros and cons of using viewWithTag()?
 - `viewWithTag()` are used to identify the views using tags.
 - pros: can identify views using tags
-- cons: keep track of tags
+- cons: keeping track of tags can get challenging
 
 ## 6. What is the difference between @IBOutlet and @IBAction?
 - IBOutlet is a keyword added to a property that is a view in the Interface Builder
@@ -39,26 +39,28 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 ## 9.  What is the purpose of UIActivityViewController?
 - when sharing data, you tell UIActivityViewController what kind of data you want to share, and it figures out how best to share it.
 
-## 10. 
+## 10. What is the purpose of UIVisualEffectView?
+- Adds and animate visual effects ie. blur effect
 
 
-## 11. 
+## 11. What is the purpose of reuse identifiers for table view cells?
+- reuse identifier is used by the tableview to register and reuse a tableview cell.
 
+## 12. When would you choose to use a collection view rather than a table view?
+- when you need multiple columns. Horizontal scroll, circular layout, tiled layout, etc.
 
-## 12. 
+## 13. Which parts of UIKit are you least familiar with?
+- notifications, I did notifications in 2019 and haven't have the chance to touch that feature again.
 
+## 14. How does a view's intrinsic content size aid in Auto Layout?
+- allow views to have a natural width and height without us forcing one. For Auto Layout to work it must know where each view is positioned precisely: its X, Y, width, and height values.
 
-## 13. 
+## 15. What is the function of anchors in Auto Layout?
+- The best bit about working with anchors is that they can be created relative to other anchors.
+-Every UIView has a set of anchors that define its layouts rules. The most important ones are widthAnchor, heightAnchor, topAnchor, bottomAnchor, leftAnchor, rightAnchor, leadingAnchor, trailingAnchor, centerXAnchor, and centerYAnchor.
 
+## 16. What is the purpose of IBDesignable?
+- provides functionality for live rendering of changes of our custom views directly in a Storyboard or . xib
 
-## 14. 
-
-
-## 15. 
-
-
-## 16. 
-
-
-## 17. 
-
+## 17. What is the purpose of UIMenuController?
+- an easy way to give the user copy/paste menu features in an app. You can also use it to expose custom features like saving, viewing, or deleting content.
